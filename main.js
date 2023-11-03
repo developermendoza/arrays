@@ -333,6 +333,14 @@ Description: Creates a new array with all elements that pass the test implemente
 
  *********************/
 
+// const numbers = [10, 20, 30, 40, 50];
+
+// const filteredNumbers = numbers.filter(function (element) {
+//   return element > 25;
+// });
+
+// console.log(filteredNumbers); // [30, 40, 50]
+
 /*********************
 
 
@@ -342,6 +350,13 @@ Description: Creates a new array by applying a function to each element in the a
 
  *********************/
 
+// const numbers = [1, 2, 3, 4, 5];
+// const doubleNumbers = numbers.map(function (element) {
+//   return element * 2;
+// });
+
+// console.log(doubleNumbers); //[2, 4, 6, 8, 10]
+
 /*********************
 
 
@@ -350,6 +365,21 @@ Description: Executes a provided function once for each array element.
 
 
  *********************/
+
+const fruits = ["apple", "banana", "cherry"];
+
+// Using forEach() to log each element to the console
+fruits.forEach(function (element) {
+  console.log(element);
+});
+
+// Result:
+
+/**
+apple
+banana
+cherry
+ */
 
 /*********************
 
