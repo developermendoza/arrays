@@ -490,12 +490,12 @@ Description:   Reverses the order of elements in the array.
 
  *********************/
 
-const fruits = ["apple", "banana", "cherry", "date", "fig"];
+// const fruits = ["apple", "banana", "cherry", "date", "fig"];
 
-// Using reverse() to reverse the order of elements in the array
-fruits.reverse();
+// // Using reverse() to reverse the order of elements in the array
+// fruits.reverse();
 
-console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
+// console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
 
 /*********************
 
@@ -505,6 +505,23 @@ Description:   Determines whether the array contains a certain element, returnin
 
 
  *********************/
+
+// const fruits = ["apple", "banana", "cherry", "date", "fig"];
+
+// // Using includes() to check if 'cherry' is in the array
+// const hasCherry = fruits.includes("cherry");
+
+// console.log(hasCherry); // true
+
+// // Using includes() with fromIndex to check if 'cherry' is in the array after index 2
+// const hasCherryAfterIndex2 = fruits.includes("cherry", 2);
+
+// console.log(hasCherryAfterIndex2); // true
+
+// // Using includes() to check if 'grape' is in the array
+// const hasGrape = fruits.includes("grape");
+
+// console.log(hasGrape); // false
 
 /*********************
 
@@ -516,6 +533,17 @@ Description: Checks if a given object is an array and returns a Boolean value.
 
  *********************/
 
+const fruits = ["apple", "banana", "cherry"];
+
+const notAnArray = "I am not an array";
+
+// Using Array.isArray() to check if an object is an array
+const isFruitsArray = Array.isArray(fruits);
+const isNotAnArray = Array.isArray(notAnArray);
+
+console.log(isFruitsArray); // true
+console.log(isNotAnArray); // false
+
 /*********************
 
 
@@ -525,3 +553,15 @@ Description: Fills the array with a static value from the start index to the end
 
 
  *********************/
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Using fill() to fill the array with the value 0
+numbers.fill(0);
+
+console.log(numbers); // [0, 0, 0, 0, 0]
+
+// Using fill() to fill a portion of the array with the value 0
+numbers.fill(0, 2, 4);
+
+console.log(numbers); // [1, 2, 0, 0, 5]
