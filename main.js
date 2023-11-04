@@ -445,6 +445,15 @@ Description: Tests whether at least one element in the array passes the test imp
 
  *********************/
 
+// const numbers = [1, 3, 5, 7, 10];
+
+// // Using some() to check if at least one number is even
+// const hasEvenNumber = numbers.some(function (element) {
+//   return element % 2 === 0;
+// });
+
+// console.log(hasEvenNumber); // true
+
 /*********************
 
 
@@ -454,6 +463,24 @@ Description:  Sorts the elements of an array in place and returns the sorted arr
 
  *********************/
 
+// const fruits = ["cherry", "fig", "apple", "date", "banana"];
+
+// // Using sort() to sort the array in ascending order
+// fruits.sort();
+
+// console.log(fruits); // ['apple', 'banana', 'cherry', 'date', 'fig']
+
+// // You can also sort an array of numbers in ascending order by providing a callback function:
+
+// const numbers = [5, 1, 3, 4, 2];
+
+// // Using sort() with a callback to sort the array in ascending order
+// numbers.sort(function (a, b) {
+//   return a - b;
+// });
+
+// console.log(numbers); // [1, 2, 3, 4, 5]
+
 /*********************
 
 
@@ -462,6 +489,13 @@ Description:   Reverses the order of elements in the array.
 
 
  *********************/
+
+const fruits = ["apple", "banana", "cherry", "date", "fig"];
+
+// Using reverse() to reverse the order of elements in the array
+fruits.reverse();
+
+console.log(fruits); // ['fig', 'date', 'cherry', 'banana', 'apple']
 
 /*********************
 
