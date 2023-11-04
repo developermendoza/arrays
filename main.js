@@ -366,12 +366,12 @@ Description: Executes a provided function once for each array element.
 
  *********************/
 
-const fruits = ["apple", "banana", "cherry"];
+// const fruits = ["apple", "banana", "cherry"];
 
-// Using forEach() to log each element to the console
-fruits.forEach(function (element) {
-  console.log(element);
-});
+// // Using forEach() to log each element to the console
+// fruits.forEach(function (element) {
+//   console.log(element);
+// });
 
 // Result:
 
@@ -390,6 +390,16 @@ Description: Reduces the array to a single value by applying a function to each 
 
  *********************/
 
+// const numbers = [1, 2, 3, 4, 5];
+
+// // using reduce() to calculate the sum of all numbers
+
+// const sum = numbers.reduce(function (accumulator, currentValue) {
+//   return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum); //15
+
 /*********************
 
 
@@ -399,6 +409,15 @@ Description: Reduces the array to a single value by applying a function to each 
 
  *********************/
 
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Using reduceRight() to calculate the sum of all numbers in reverse order
+// const sum = numbers.reduceRight(function (accumulator, currentValue) {
+//   return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum); // 15
+
 /*********************
 
 
@@ -407,6 +426,15 @@ Description: Tests whether all elements in the array pass the test implemented b
 
 
  *********************/
+
+// const numbers = [2, 4, 6, 8, 10];
+
+// // Using every() to check if all numbers are even
+// const areAllEven = numbers.every(function (element) {
+//   return element % 2 === 0;
+// });
+
+// console.log(areAllEven); // true
 
 /*********************
 
